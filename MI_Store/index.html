@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MI Store</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+      }
+
+      .navbar img {
+        width: 120px;
+        cursor: pointer;
+      }
+
+      .left,
+      .right {
+        display: flex;
+        align-items: center;
+      }
+
+      .left li,
+      .right li {
+        list-style: none;
+        margin-right: 20px;
+      }
+
+      .left a,
+      .right a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .right i {
+        color: black;
+        margin-left: 15px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .right li {
+        margin-left: 10px;
+      }
+
+      /* Card css */
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+      }
+
+      .card .discount {
+        background-color: rgb(233, 216, 185);
+        width: 20%;
+        color: #ff6900;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .card .price {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .card .original-price {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .CardRow {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+      }
+      .poster {
+        display: flex;
+        padding: 10px 20px;
+        background-color: bisque;
+      }
+
+      .PosterImage {
+        position: relative;
+        width: 500px; /* Adjust as needed */
+        height: 300px; /* Adjust as needed */
+        margin-left: 50px; /* Adjust as needed */
+        display: flex;
+        padding: 10px;
+      }
+      .PosterImage img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      button {
+        background-color: black;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="container">
+      <div class="navbar">
+        <div class="left">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7AF_WAmdKtNWiBigVxHaXylvqhfQNR9sB-A&s"
+            alt="MI LOGO"
+          />
+          <li><a href="#" style="color: #ff8c42">Store</a></li>
+          <li><a href="#">Phone</a></li>
+          <li><a href="#">Tablet</a></li>
+          <li><a href="#">TV & Smart Phone</a></li>
+          <li><a href="#">LifeStyle</a></li>
+        </div>
+        <div class="right">
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Support</a></li>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-store"></i>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Cart Section -->
+    <div class="CardRow">
+      <div class="card">
+        <h3>Redmi Watch</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/o/c/m/-original-imagxp8udqfxrnuw.jpeg?q=70
+          "
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+      <div class="card">
+        <h3>Redmi Airpods</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/6/j/1/x41-bullets-wireless-with-fast-charge-50-hrs-battery-life-original-imah4c56mvpaefvg.jpeg?q=70"
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+      <div class="card">
+        <h3>Redmi Airpods</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/e/a/f/-original-imagtc44nk4b3hfg.jpeg?q=70"
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+      <div class="card">
+        <h3>Redmi Printer</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/printer/r/0/8/hl-l2321d-ind-brother-original-imah3d3b9exz7ejf.jpeg?q=70"
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+    </div>
+    <!-- Poster section -->
+    <div class="poster">
+      <div class="contend">
+        <h3>Save UP to 65%</h3>
+        <h3>All Prodcuts Free Develivery</h3>
+        <p>Free Develivery on All Prodcuts</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="PosterImage">
+       
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/e/a/f/-original-imagtc44nk4b3hfg.jpeg?q=70"
+        />
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/printer/r/0/8/hl-l2321d-ind-brother-original-imah3d3b9exz7ejf.jpeg?q=70"
+        />
+      </div>
+    </div>
+    <!-- Cart Section -->
+    <div class="CardRow">
+      <div class="card">
+        <h3>Redmi Watch</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/o/c/m/-original-imagxp8udqfxrnuw.jpeg?q=70
+        "
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+      <div class="card">
+        <h3>Redmi Airpods</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/6/j/1/x41-bullets-wireless-with-fast-charge-50-hrs-battery-life-original-imah4c56mvpaefvg.jpeg?q=70"
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+      <div class="card">
+        <h3>Redmi Airpods</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/e/a/f/-original-imagtc44nk4b3hfg.jpeg?q=70"
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+      <div class="card">
+        <h3>Redmi Printer</h3>
+        <div class="discount">25% off</div>
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/xif0q/printer/r/0/8/hl-l2321d-ind-brother-original-imah3d3b9exz7ejf.jpeg?q=70"
+        />
+
+        <div class="price">₹449</div>
+        <div class="original-price">₹599</div>
+      </div>
+    </div>
+  </body>
+</html>
