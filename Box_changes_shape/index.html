@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shape</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      h1{
+        text-align: center;
+        font-weight: 500;
+      }
+      .container {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        
+      }
+      .box {
+        display: flex;
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .box-1 {
+        background-color: #ba56f7;
+      }
+      .box-2 {
+        background-color: #ff6161;
+      }
+      .box-3 {
+        background-color: #505cca;
+      }
+      .box-4 {
+        background-color: lightgreen;
+      }
+      .box-5 {
+        background-color: #be3690;
+      }
+      .box-3:hover{
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box the change shape</h1>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+    </div>
+  </body>
+</html>
