@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umso</title>
+    <style>
+     body {
+        margin: 0;
+        padding: 0;
+        background-color: aliceblue;
+      }
+
+      .container {
+        justify-content: center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
+      }
+
+      .HyperLink {
+        display: flex;
+        margin-left: 40%;
+        
+        list-style: none;
+        text-decoration: none;
+      }
+
+      .logo img {
+        width: 200px;
+        cursor: pointer;
+      }
+      .HyperLink li a {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: black;
+      }
+      img {
+        width: 100px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .home {
+        text-align: center;
+      }
+      .h1 {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        font-size: x-large;
+      }
+      .h2 {
+        color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        font-size: x-large;
+      }
+      p {
+        color: black;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .input-container {
+        display: flex;
+        align-items: center;
+        background-color: #111;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+      }
+      input {
+        flex: 1;
+        border: none;
+        background-color: #111;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px 0 0 5px;
+      }
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/n6n24jywpz52ayxr.png"
+              alt="usmo"
+            />
+          </div>
+          <ul class="HyperLink">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="home">
+      <div class="h1">Get your</div>
+      <div class="h2">Ai Generated Website</div>
+      <div class="h1">In Seconds</div>
+      <p>Give it a try right below, without having to sign up!</p>
+      <div class="input-container">
+        <input type="text" placeholder="Vegan Pizza Restaurant in" />
+        <button type="button">Generate</button>
+      </div>
+      <p>
+        Excellent <span style="color: goldenrod">★★★★★</span> 4.8 out of 5 based on 85 reviews
+        <button>★Trustpilot</button>
+      </p>
+      <button>
+        Made with
+        <img
+          src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/n6n24jywpz52ayxr.png"
+          alt="usmo"
+        />
+      </button>
+    </div>
+  </body>
+</html>
